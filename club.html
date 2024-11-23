@@ -4,59 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
     <title>clubs</title>
 </head>
 
 <body>
-    <header>
+    <header class="header">
+        <div><img src="logo.png" alt="logo"></div>
+        <div class="titre"><a href="index.html"><p>ENSA CLUB</p></a></div>
         <nav>
-            <ul>
-                <li><a href="accueil.html">Accueil</a></li>
-                <li><a href="club.html">clubs</a></li>
-                <li><a href="evenement.html">Evènements</a></li>
-                <li><a href="propos.html">À propos de nous</a></li>
-                <li><a href="Contact.html">Contacter nous</a></li>
-                <li><a href="inscrip.html">Inscription</a></li>
-            </ul>
+          <ul>
+            <li><a href="index.html">
+              <i class='bx bx-home'></i></i>Accueil</a></li>
+              <li><a href="club.html" class="active">
+                <i class='bx bx-credit-card-front'></i>clubs</a></li>
+              <li><a href="evenement.html">
+                <i class='bx bx-calendar-event' ></i>Evènements</a></li>
+              <li><a href="propos.html">
+                <i class='bx bxs-contact'></i>À propos de nous</a></li>
+              <li><a href="Contact.html">
+                <i class='bx bx-envelope'></i>Contacter nous</a></li>
+              <li><a href="inscrip.html">
+                <i class='bx bx-log-in-circle'></i>Inscription</a></li>
+          </ul>
         </nav>
-    </header>
+      </header>
 
-    <section>
-        <div>
-            <div>
-                <img src="dev.jpeg" alt="devClub">
+    <section class="club">
+
+        <div class="carteClub">
+            <div class="imageClub">
+                <img src="devl.jpeg" alt="devClub">
             </div>
-            <div>
+            <div class="text">
                 <strong>Dev Club</strong>
                 <p>Un espace pour les passionnés de technologie où l'on apprend, collabore et innove ensemble. Ateliers,
                     projets, et rencontres pour approfondir les compétences et réaliser des idées en équipe.</p>
-                <p>Rejoignez-nous pour façonner l’avenir du numérique !</p>
+                <p class="jointure">Rejoignez-nous pour façonner l’avenir du numérique !</p>
             </div>
-            <a href="inscrip.html"><button>s'inscrire</button></a>
+
+           <a href="inscrip.html"><button>s'inscrire</button></a>
+               
         </div>
 
-        <div>
-            <div>
+        <div class="carteClub">
+            <div class="imageClub">
                 <img src="social.jpeg" alt="socialClub">
             </div>
-            <div>
+            <div class="text">
                 <strong>Social Club</strong>
                 <p>Un espace convivial pour se rencontrer, échanger et créer des liens autour d’activités
                     enrichissantes. Que ce soit pour des discussions, des événements ou des projets communs.</p>
-                <p>Rejoignez notre communauté pour partager, apprendre et s’épanouir ensemble !</p>
+                <p class="jointure">Rejoignez notre communauté pour partager, apprendre et s’épanouir ensemble !</p>
             </div>
             <a href="inscrip.html"><button>s'inscrire</button></a>
         </div>
 
-        <div>
-            <div>
+        <div class="carteClub">
+            <div class="imageClub">
                 <img src="media.jpeg" alt="mediaClub">
             </div>
-            <div>
+            <div class="text">
                 <strong>Media Club</strong>
                 <p>Un lieu de créativité pour les passionnés de médias ! Découvrez, explorez et créez du contenu, que ce
                     soit en photographie, vidéo, journalisme ou réseaux sociaux. </p>
-                <p>Rejoignez-nous pour donner vie à vos idées et inspirer notre communauté !</p>
+                <p class="jointure">Rejoignez-nous pour donner vie à vos idées et inspirer notre communauté !</p>
             </div>
             <a href="inscrip.html"><button>s'inscrire</button></a>
         </div>
