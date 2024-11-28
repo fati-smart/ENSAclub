@@ -542,3 +542,119 @@ th {
 .delete-btn:hover {
     background-color: #c0392b;
 }
+
+body {
+    background-color: rgb(245, 179, 179);
+  padding-top: 80px; /* Ajustez selon la hauteur du header */
+  }
+  /********************************a propos de nous***************************************************/
+.pro {
+    max-width: 1900px;
+    margin: 50px auto;
+    background: #f7b6b6;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+
+.pro p {
+    line-height: 1.6;
+    font-size: 18px;
+    color: #555;
+    text-align: justify;
+}
+
+.pro p br {
+    margin-bottom: 10px;
+}
+/*******************************************footer******************************************/
+footer{
+    background: #bf65bc;
+    padding-top: 50px;
+    
+    }
+
+.footer-container{
+    width: 1160px;
+    margin: auto;
+    display: flex;
+    justify-content: left;
+    height: 144px;
+    
+    
+}
+.footer-container p{
+    width:200px;
+    margin: auto;
+    padding: 7px;
+    justify-content: left;
+    margin: 0;
+    font-size: 12px;
+    height: 55px;
+}
+.footer-section-info{
+    width: 11140px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    
+}
+.footer-bottom{
+    background: #f18930;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+.footer-bottomr p{
+    color: #343434;
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
+}
+/***********************cocki******************************************************************/
+/* Style de la barre de notification des cookies */
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #34495e;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    display: none; /* Initialement cachée */
+    z-index: 1000;
+}
+
+.cookie-banner a {
+    color: #ecf0f1;
+    text-decoration: underline;
+}
+
+.cookie-banner button {
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+
+.cookie-banner button:hover {
+    background-color: #16a085;
+}
+
+/* Style pour les petits écrans (mobile/tablette) */
+@media screen and (max-width: 768px) {
+    .cookie-banner {
+        font-size: 0.9rem;  /* Réduction de la taille du texte */
+        padding: 10px;      /* Réduction du padding */
+    }
+
+    .cookie-banner button {
+        padding: 8px 16px;  /* Ajuster la taille du bouton */
+    }
+}

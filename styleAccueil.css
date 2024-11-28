@@ -57,3 +57,104 @@ body {
     color: #ffffff; /* Couleur de survol */
     font-size: 19px;
 }
+
+
+    
+    /* Container */
+    .centered-left {
+    position: absolute; /* Permet de positionner l'élément */
+    top: 50%; /* Centre verticalement */
+    left: 0; /* Aligne à gauche */
+    transform: translateY(-50%); /* Ajuste le décalage pour centrer parfaitement verticalement */
+    width: 100%; /* Facultatif : dépend si tu veux une largeur fixe ou pleine */
+    text-align: left; /* Texte aligné à gauche */
+    padding: 10px; /* Ajoute un peu d'espace autour du texte si nécessaire */
+    }
+
+    /* Texte */
+    .centered-left p {
+    font-size: 18px; /* Ajustez la taille du texte */
+    color: #333; /* Couleur du texte */
+    margin: 0; /* Supprime l'espacement par défaut autour de la phrase */
+    }
+    /* Conteneur général */
+.container {
+    display: flex; /* Active le flexbox */
+    justify-content: flex-end; /* Aligne les éléments à droite */
+    align-items: center; /* Centre verticalement (si nécessaire) */
+    height: 45vh; /* Facultatif : pleine hauteur de la fenêtre */
+    padding-right: 20px; /* Facultatif : espace entre le bord droit et le disque */
+    background-color: rgb(245, 179, 179); /* Couleur de fond pour tester */
+}
+
+  /* Conteneur circulaire */
+  .circle {
+    width: 200px; /* Largeur du disque */
+    height: 200px; /* Hauteur identique pour garder un disque */
+    border-radius: 50%; /* Rend le conteneur circulaire */
+    overflow: hidden; /* Cache tout ce qui dépasse */
+    background-color:  linear-gradient(to right, #fff7ad, #ffa9f9); /* Facultatif : couleur de fond si l'image ne remplit pas */
+    border: 5px solid #666; /* Facultatif : bordure */
+    display: flex; /* Centrer l'image à l'intérieur */
+    justify-content: center; /* Centre horizontalement l'image */
+    align-items: center; /* Centre verticalement l'image */
+}
+
+  /* Image dans le disque */
+  .circle img {
+    width: 100%; /* Ajuste la taille de l'image */
+    height: 100%; /* Ajuste la hauteur de l'image */
+    object-fit: cover; /* Remplit le disque tout en gardant les proportions */
+    border-radius: 50%; /* Maintient l'effet circulaire pour l'image */
+}
+
+
+    body {
+      background-color: rgb(245, 179, 179);
+    padding-top: 80px; /* Ajustez selon la hauteur du header */
+    }
+  footer{
+        background: #bf65bc;
+        padding-top: 50px;
+        
+        }
+
+    .footer-container{
+        width: 1160px;
+        margin: auto;
+        display: flex;
+        justify-content: left;
+        height: 144px;
+        
+        
+    }
+    .footer-container p{
+        width:200px;
+        margin: auto;
+        padding: 7px;
+        justify-content: left;
+        margin: 0;
+        font-size: 12px;
+        height: 55px;
+    }
+    .footer-section-info{
+        width: 11140px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .footer-bottom{
+        background: #f18930;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 50px;
+    }
+    .footer-bottomr p{
+        color: #343434;
+        margin: 0;
+        font-size: 16px;
+        padding: 7px;
+    }
+  
+  
