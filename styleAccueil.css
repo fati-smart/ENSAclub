@@ -110,7 +110,8 @@ body {
 
 
     body {
-      background-color: rgb(245, 179, 179);
+        background: linear-gradient(to right, #fff7ad, #ffa9f9);
+
     padding-top: 80px; /* Ajustez selon la hauteur du header */
     }
   footer{
@@ -157,4 +158,8 @@ body {
         padding: 7px;
     }
   
-  
+ 
+.index{
+    background: linear-gradient(to right, #fff7ad, #ffa9f9);
+
+}
