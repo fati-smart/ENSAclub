@@ -543,10 +543,7 @@ th {
     background-color: #c0392b;
 }
 
-body {
-    background-color: rgb(245, 179, 179);
-  padding-top: 80px; /* Ajustez selon la hauteur du header */
-  }
+
   /********************************a propos de nous***************************************************/
 .pro {
     max-width: 1900px;
