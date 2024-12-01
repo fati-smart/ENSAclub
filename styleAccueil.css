@@ -1,13 +1,20 @@
 body {
-    font-family: cursive;
+    margin: 0; /* Retire les marges par défaut */
+    padding: 0;
+    height: 150vh; /* Hauteur égale à celle de la fenêtre */
+    width: 100vw; /* Largeur égale à celle de la fenêtre */
+    background-image: url("background.PNG") ; /* Remplacez par le chemin de votre image */
+    background-size: cover; /* L'image occupe 100% en largeur et hauteur */
+    background-position: top left; /* Place l'image en haut à gauche */
+    background-repeat: no-repeat; /* Évite la répétition */
 }
+
 .header {
-    background: linear-gradient(to right, #fff7ad, #ffa9f9);
+    background: rgba(35, 31, 32, 0.5);
     width: 100%;
     height: 100px;
     display: flex;
     align-items: center;
-    position: fixed; /*position fixe en haut */
     top: 0;
     left: 0;
     z-index: 1000; /* header reste au-dessus du contenu */
@@ -31,6 +38,9 @@ body {
 .header .titre a{
     text-decoration: none;
 }
+.header .titre p{
+    color:white;
+}
 
 .header nav {
     width: 100%;
@@ -48,7 +58,7 @@ body {
 
 .header nav ul li a {
     text-decoration: none; /* Retire le soulignement des liens */
-    color: #083c81; /* Changez la couleur selon vos préférences */
+    color: #97c1f7; /* Changez la couleur selon vos préférences */
     padding: 10px 15px;
     font-size: 16px;
 }
@@ -57,64 +67,73 @@ body {
     color: #ffffff; /* Couleur de survol */
     font-size: 19px;
 }
-
-
-    
-    /* Container */
-    .centered-left {
-    position: absolute; /* Permet de positionner l'élément */
-    top: 50%; /* Centre verticalement */
-    left: 0; /* Aligne à gauche */
-    transform: translateY(-50%); /* Ajuste le décalage pour centrer parfaitement verticalement */
-    width: 100%; /* Facultatif : dépend si tu veux une largeur fixe ou pleine */
-    text-align: left; /* Texte aligné à gauche */
-    padding: 10px; /* Ajoute un peu d'espace autour du texte si nécessaire */
-    }
-
-    /* Texte */
-    .centered-left p {
-    font-size: 18px; /* Ajustez la taille du texte */
-    color: #333; /* Couleur du texte */
-    margin: 0; /* Supprime l'espacement par défaut autour de la phrase */
-    }
-    /* Conteneur général */
-.container {
-    display: flex; /* Active le flexbox */
-    justify-content: flex-end; /* Aligne les éléments à droite */
-    align-items: center; /* Centre verticalement (si nécessaire) */
-    height: 45vh; /* Facultatif : pleine hauteur de la fenêtre */
-    padding-right: 20px; /* Facultatif : espace entre le bord droit et le disque */
-    background-color: rgb(245, 179, 179); /* Couleur de fond pour tester */
+main {
+    flex: 1; /* Occuper l'espace entre header et footer */
+    background: url('image.jpg') no-repeat center center; /* Image de fond */
+    background-size: cover; /* Couvrir toute la section */
+    display: flex;
+    align-items: center; /* Centrage vertical */
+    justify-content: flex-start; /* Contenu aligné à gauche */
+    padding-left: 5%; /* Décalage depuis le bord gauche */
+    color: white; /* Texte blanc sur l'image */
 }
 
-  /* Conteneur circulaire */
-  .circle {
-    width: 200px; /* Largeur du disque */
-    height: 200px; /* Hauteur identique pour garder un disque */
-    border-radius: 50%; /* Rend le conteneur circulaire */
-    overflow: hidden; /* Cache tout ce qui dépasse */
-    background-color:  linear-gradient(to right, #fff7ad, #ffa9f9); /* Facultatif : couleur de fond si l'image ne remplit pas */
-    border: 5px solid #666; /* Facultatif : bordure */
-    display: flex; /* Centrer l'image à l'intérieur */
-    justify-content: center; /* Centre horizontalement l'image */
-    align-items: center; /* Centre verticalement l'image */
+/* Conteneur de contenu */
+.welcome-container {
+    text-align: left; /* Alignement du texte et bouton à gauche */
+   /* background: rgba(0, 0, 0, 0.6); *//* Fond semi-transparent pour améliorer la lisibilité */
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
 }
 
-  /* Image dans le disque */
-  .circle img {
-    width: 100%; /* Ajuste la taille de l'image */
-    height: 100%; /* Ajuste la hauteur de l'image */
-    object-fit: cover; /* Remplit le disque tout en gardant les proportions */
-    border-radius: 50%; /* Maintient l'effet circulaire pour l'image */
+/* Titre Bienvenue */
+.welcome-container h1 {
+    margin-top: 125px;
+    font-size: 2.5em;
+    margin-bottom: 125px;
+    color: #b7fcff;
+    margin-left: 50px;
+    font-style: Arial black ;
+}
+.welcome-container ul{
+    font-size: Georgia ;
+}
+.photos {
+    max-width: 30000px; /* Taille maximale de l'image */
+    border-radius: 50%; /* Arrondir l'image (optionnel) */
+    -ms-ime-align: left;
 }
 
 
+<<<<<<< HEAD
+.btn-submit {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #6d1616; /* Bleu */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
+    margin-left: 130px;
+    margin-bottom: 110px;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3; /* Bleu foncé au survol */
+}
+
+=======
     body {
-      background-color: rgb(245, 179, 179);
+        background: linear-gradient(to right, #fff7ad, #ffa9f9);
+
     padding-top: 80px; /* Ajustez selon la hauteur du header */
     }
+>>>>>>> a0bee6493c5edf4b23ff122b75706cf7339591e4
   footer{
-        background: #bf65bc;
+    background: rgba(35, 31, 32, 0.5);
         padding-top: 50px;
         
         }
@@ -123,19 +142,21 @@ body {
         width: 1160px;
         margin: auto;
         display: flex;
-        justify-content: left;
+        justify-content: center;
         height: 144px;
-        
+        width: 100%;
         
     }
+    
     .footer-container p{
         width:200px;
         margin: auto;
         padding: 7px;
         justify-content: left;
         margin: 0;
-        font-size: 12px;
+        font-size: 14px;
         height: 55px;
+        color: #c2c2c2;
     }
     .footer-section-info{
         width: 11140px;
@@ -144,17 +165,74 @@ body {
         justify-content: center;
         
     }
+    .footer-links{
+        margin-right: 60px;
+        width: 2500px;
+    }
+    .footer-links a{
+        color:#c2c2c2 ;
+    }
+    
+    
     .footer-bottom{
-        background: #f18930;
+        background: #960000;
         text-align: center;
         padding: 10px 0;
         margin-top: 50px;
     }
-    .footer-bottomr p{
+    .footer-bottom p{
         color: #343434;
         margin: 0;
         font-size: 16px;
         padding: 7px;
     }
+    .footer-container h3{
+        color: aliceblue;
+    
+    }
+   
+    /* Cookie Popup Styles */
+.cookie-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.cookie-content {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    max-width: 5000px;
+    width: 90%;
+}
+
+.cookie-buttons button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #960000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.cookie-buttons button:hover {
+    background-color: #0056b3;
+}
   
-  
+ 
+.index{
+    background: linear-gradient(to right, #fff7ad, #ffa9f9);
+
+}
