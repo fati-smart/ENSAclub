@@ -142,8 +142,8 @@ body {
 
 .carteClub button:hover {
     background-color: #d91103e0; 
-    transform: scale(1.2); 
-    font-size: 17.6px;
+    transform: scale(1.1); 
+    
 }
 
 /****************************************section EVENMENT****************************************/
@@ -543,6 +543,7 @@ th {
     background-color: #c0392b;
 }
 
+<<<<<<< HEAD
 
   /********************************a propos de nous***************************************************/
 .pro {
@@ -599,59 +600,184 @@ footer{
 }
 .footer-bottom{
     background: #f18930;
+=======
+  /************************************a propos de nous********************************************/
+.propos {
+    margin-top: 100px;
+    background-color: #f9f9f9;
+    color: #2c3e50;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+>>>>>>> a0bee6493c5edf4b23ff122b75706cf7339591e4
     text-align: center;
-    padding: 10px 0;
-    margin-top: 50px;
-}
-.footer-bottomr p{
-    color: #343434;
-    margin: 0;
-    font-size: 16px;
-    padding: 7px;
-}
-/***********************cocki******************************************************************/
-/* Style de la barre de notification des cookies */
-.cookie-banner {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #34495e;
-    color: #fff;
-    padding: 15px;
-    text-align: center;
-    display: none; /* Initialement cachée */
-    z-index: 1000;
+    line-height: 1.8;
 }
 
-.cookie-banner a {
+.propos div {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.propos p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.propos a{
+    text-decoration: none;
+    color:#b30909 ;
+}
+
+.propos a:hover{
+    color:#ff0000 ;
+    font-size: 16px;
+}
+
+.propos p:first-of-type {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f39c12;
+    margin-bottom: 20px;
+}
+
+.cantact .btn-cont {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    padding: 10px 15px;
+    margin: 20px auto 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #f39c12;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cantact .btn-cont:hover {
+    background-color: #d87e0a;
+}
+
+/********************************************FOOTER*************************************************/
+.footer{
+    height: 180px;
+    width: 100%;
+    background-color: #860404;
+    margin-top: 60px;
     color: #ecf0f1;
+    padding: 10px 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footer-content, .footer-section-info {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+}
+
+.footer h3 {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+    color: #f39c12;
+}
+
+.footer p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 2px 0;
+}
+
+.footer a {
+    color: #f39c12;
+    text-decoration: none;
+}
+
+.footer a:hover {
     text-decoration: underline;
 }
 
-.cookie-banner button {
-    background-color: #1abc9c;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    margin-left: 15px;
+.footer-bottom {
+    background-color: #34495e;
+    color: #bdc3c7;
+    padding: 10px;
+    font-size: 12px;
+}
+
+/*****************************************CONTACT***************************************************/
+.cantact {
+    margin-top: 100px;
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cantact fieldset {
+    width: 100%;
+    max-width: 500px;
+    border: 2px solid #f39c12;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cantact legend {
+    font-size: 18px;
+    font-weight: bold;
+    color: #f39c12;
+    padding: 0 10px;
+    text-transform: uppercase;
+}
+
+.cantact label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-top: 10px;
+}
+
+.cantact input[type="text"],
+.cantact input[type="email"],
+.cantact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 14px;
+    color: #2c3e50;
+    box-sizing: border-box;
 }
 
-.cookie-banner button:hover {
-    background-color: #16a085;
+.cantact input::placeholder,
+.cantact textarea::placeholder {
+    color: #999;
 }
 
-/* Style pour les petits écrans (mobile/tablette) */
-@media screen and (max-width: 768px) {
-    .cookie-banner {
-        font-size: 0.9rem;  /* Réduction de la taille du texte */
-        padding: 10px;      /* Réduction du padding */
-    }
-
-    .cookie-banner button {
-        padding: 8px 16px;  /* Ajuster la taille du bouton */
-    }
+.cantact textarea {
+    resize: vertical;
+    min-height: 80px;
 }
+

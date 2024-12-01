@@ -106,6 +106,7 @@ main {
 }
 
 
+<<<<<<< HEAD
 .btn-submit {
     padding: 10px 20px;
     font-size: 1.2em;
@@ -124,6 +125,13 @@ main {
     background-color: #0056b3; /* Bleu foncé au survol */
 }
 
+=======
+    body {
+        background: linear-gradient(to right, #fff7ad, #ffa9f9);
+
+    padding-top: 80px; /* Ajustez selon la hauteur du header */
+    }
+>>>>>>> a0bee6493c5edf4b23ff122b75706cf7339591e4
   footer{
     background: rgba(35, 31, 32, 0.5);
         padding-top: 50px;
@@ -223,4 +231,8 @@ main {
     background-color: #0056b3;
 }
   
-  
+ 
+.index{
+    background: linear-gradient(to right, #fff7ad, #ffa9f9);
+
+}
