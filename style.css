@@ -219,7 +219,6 @@ body {
     font-size: 16px;
 }
 /****************************************INSCRIPTION**********************************************/
-/* Section Inscription */
 .inscription {
     background: linear-gradient(to bottom, #f7f9fc, #e4ecf5);
     padding: 50px 20px;
@@ -306,7 +305,6 @@ body {
     text-decoration: underline;
   }
   
-  /* Animation pour formulaire */
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -318,7 +316,6 @@ body {
     }
   }
   
-  /* Responsive Design */
   @media (max-width: 768px) {
     .formulaire {
       padding: 20px;
@@ -331,7 +328,6 @@ body {
   
 
 /**********************************************login***********************************************/
-/* Section Connexion */
 .connexion {
     padding: 50px 20px;
     display: flex;
@@ -417,7 +413,6 @@ body {
     text-decoration: underline;
   }
   
-  /* Animation pour le formulaire */
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -429,7 +424,6 @@ body {
     }
   }
   
-  /* Responsive Design */
   @media (max-width: 768px) {
     .logFormulaire {
       padding: 20px;
@@ -588,19 +582,18 @@ th {
 i.bx.bx-chevrons-left {
     margin-top: 20px;
     margin-left: 20px;
-    font-size: 80px; /* Adjusts the size of the icon */
-    color: #0742b1; /* Sets the color of the icon */
-    transition: color 0.3s, transform 0.3s; /* Smooth transition for color and transformation */
+    font-size: 80px; 
+    color: #0742b1; 
+    transition: color 0.3s, transform 0.3s; 
 }
 
 i.bx.bx-chevrons-left:hover {
-    color: #2980b9; /* Changes color on hover */
-    transform: translateX(-5px); /* Adds a slight movement when hovered */
+    color: #2980b9; 
+    transform: translateX(-5px); 
 }
 
 
 
-<<<<<<< HEAD
   /********************************a propos de nous************************************************/
 .propos {
     background: linear-gradient(to bottom, #f7f9fc, #e4ecf5);
@@ -610,15 +603,6 @@ i.bx.bx-chevrons-left:hover {
   
   .propos-container {
     max-width: 800px;
-=======
-.pro p br {
-    margin-bottom: 10px;
-}
-/*******************************************footer******************************************/
-
-.propos div {
-    width: 1000px;
->>>>>>> 9514c5777fb14525456b29404c2021a1202b66a9
     margin: 0 auto;
     text-align: center;
     animation: fadeIn 1s ease-in-out;
@@ -741,7 +725,6 @@ i.bx.bx-chevrons-left:hover {
 }
 
 /*****************************************CONTACT***************************************************/
-/* Section Contact */
 .contact {
     background: linear-gradient(to bottom, #f5f7fa, #e4ecf5);
     padding: 40px 20px;
@@ -812,7 +795,6 @@ i.bx.bx-chevrons-left:hover {
     transform: translateY(-3px);
   }
   
-  /* Responsive Design */
   @media (max-width: 768px) {
     .contact-fieldset {
       padding: 20px;
