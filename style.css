@@ -600,6 +600,7 @@ i.bx.bx-chevrons-left:hover {
 
 
 
+<<<<<<< HEAD
   /********************************a propos de nous************************************************/
 .propos {
     background: linear-gradient(to bottom, #f7f9fc, #e4ecf5);
@@ -609,6 +610,15 @@ i.bx.bx-chevrons-left:hover {
   
   .propos-container {
     max-width: 800px;
+=======
+.pro p br {
+    margin-bottom: 10px;
+}
+/*******************************************footer******************************************/
+
+.propos div {
+    width: 1000px;
+>>>>>>> 9514c5777fb14525456b29404c2021a1202b66a9
     margin: 0 auto;
     text-align: center;
     animation: fadeIn 1s ease-in-out;
