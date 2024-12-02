@@ -576,42 +576,6 @@ th {
     margin-bottom: 10px;
 }
 /*******************************************footer******************************************/
-footer{
-    background: #bf65bc;
-    padding-top: 50px;
-    
-    }
-
-.footer-container{
-    width: 1160px;
-    margin: auto;
-    display: flex;
-    justify-content: left;
-    height: 144px;
-    
-    
-}
-.footer-container p{
-    width:200px;
-    margin: auto;
-    padding: 7px;
-    justify-content: left;
-    margin: 0;
-    font-size: 12px;
-    height: 55px;
-}
-.footer-section-info{
-    width: 11140px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    
-}
-.footer-bottom{
-    background: #f18930;
-    text-align: center;
-    line-height: 1.8;
-}
 
 .propos div {
     width: 1000px;
