@@ -1,79 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 body {
     font-family: cursive;
+    background-color: #f5f6fa;
+    overflow-x: hidden;
+    background: linear-gradient(to bottom, #f7f9fc, #e4ecf5);
 }
 
 /*******************************************HEADER************************************************/
 .header {
-    background:  #0A2558;
-    width: 100%;
-    height: 100px;
+    background-color: #0A2558;
+    color: white;
     display: flex;
     align-items: center;
-    position: fixed; 
-    top: 0;
-    left: 0;
-    z-index: 1000; 
-    border-radius: 6px;
-}
-
-.header img{
-    margin-left: 10px;
+    justify-content: space-between;
+    padding: 15px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header img {
+    margin-left: 20px;
     width: 80px;
     height: 80px;
     border-radius: 50%;
-}
-
-.header .titre p{
-    margin-left: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    color: #ffffff;
-    white-space: nowrap; 
-    
-}
-.header .titre a{
+  }
+  
+  .header .titre a {
     text-decoration: none;
-}
-
-.header nav {
-    width: 100%;
-    text-align: center;
-    margin-left: 200px;
-}
-
-.header nav ul {
-    list-style: none; 
-    display: flex; 
-    justify-content: space-around; 
-    padding: 0;
-    margin: 0;
-}
-
-.header nav ul li a {
-    text-decoration: none; 
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s ease-in-out;
+  }
+  .header .titre p{
+    font-size: 30px;
+    font-weight: bold;
     color: #ffffff; 
-    padding: 10px 15px;
-    font-size: 16px;
+    margin: 0;   
 }
-
-.header nav ul li a:hover {
-    color: #ffffff;
-    font-size: 19px;
-}
-
-.header nav ul li a.active {
+  
+  nav ul li a:hover {
     color: #9eb8ef;
-    font-size: 16px;
-}
+  }
+  
+  nav ul li a.active {
+    border-bottom: 2px solid #9eb8ef;
+    padding-bottom: 3px;
+    color: #9eb8ef;
+    transform: scale(1.1); 
 
-.bx{
-    font-size: 17px;
-    margin-right: 5px;
-}
-
+  }
 /*************************************section CLUB***********************************************/
 .club{
-    margin-top: 120px;
+    margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: center; 
@@ -148,29 +146,23 @@ body {
 
 /****************************************section EVENMENT****************************************/
 .event {
-    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
-    background-color: #f5f5f5;
-    margin-top: 110px;
-    /*align-items: center; */
+    margin-top: 30px;
+    align-items: center; 
     border-radius: 12px;    
     gap:  40px 15px; 
     max-width: 1400px;
-    width: 100%;
-    
     
 }
 
 .carteEvent {
-    width: 300px;
+    width: 340px;
     display: flex;
     flex-direction: column;
-
-   /* height: 160px;*/
-   
+    height: 200px;
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -179,10 +171,10 @@ body {
     padding: 10px;
     position: relative;
     text-align: center;
-  /* margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
     margin-top: 20px;
-    margin-bottom: 20px;*/
+    margin-bottom: 20px;
 
 }
 
@@ -227,186 +219,227 @@ body {
     font-size: 16px;
 }
 /****************************************INSCRIPTION**********************************************/
+/* Section Inscription */
 .inscription {
+    background: linear-gradient(to bottom, #f7f9fc, #e4ecf5);
+    padding: 50px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f5f5f5;
-    padding: 20px;
-    margin-top: 110px;
-}
-
-.formulaire {
+  }
+  
+  .formulaire {
     background: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     padding: 30px;
+    max-width: 500px;
     width: 100%;
-    max-width: 400px;
-    text-align: center;
-}
-
-.formulaire a{
-    text-decoration: none;
-}
-
-.titre-formulaire {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .titre-formulaire {
     font-size: 24px;
     font-weight: bold;
+    text-align: center;
+    color: #0A2558;
     margin-bottom: 20px;
-    color: #007bff;
-}
-
-.form-group {
-    margin-bottom: 15px;
-    text-align: left;
-}
-
-.form-group label {
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    font-size: 16px;
+    color: #0A2558;
     display: block;
-    font-size: 14.4px;
-    color: #333333;
     margin-bottom: 5px;
-}
-
-.form-group input {
+  }
+  
+  .form-group input {
     width: 100%;
     padding: 10px;
+    font-size: 16px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    font-size: 16px;
-    box-sizing: border-box;
-    transition: border-color 0.3s ease;
-}
-
-.form-group input:focus {
-    border-color: #007bff;
     outline: none;
-}
-
-.btn-submit {
-    display: block;
-    width: 100%;
-    padding: 12px;
-    font-size: 16px;
-    background-color: #007bff;
+    transition: border-color 0.3s;
+  }
+  
+  .form-group input:focus {
+    border-color: #f39c12;
+  }
+  
+  .btn-submit {
+    background-color: #0A2558;
     color: #ffffff;
+    padding: 12px 20px;
+    font-size: 16px;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.btn-submit:hover {
-    background-color: #0056b3;
-}
-
-.lien-membre {
-    margin-top: 15px;
-    font-size: 14.4px;
-    color: #555;
-}
-
-.lien-membre a {
-    color: #007bff;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .btn-submit:hover {
+    background-color: #072042;
+    transform: translateY(-3px);
+  }
+  
+  .lien-membre {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #0A2558;
+  }
+  
+  .lien-membre a {
+    color: #f39c12;
     text-decoration: none;
-}
-
-.lien-membre a:hover {
+    font-weight: bold;
+  }
+  
+  .lien-membre a:hover {
     text-decoration: underline;
-}
+  }
+  
+  /* Animation pour formulaire */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .formulaire {
+      padding: 20px;
+    }
+  
+    .btn-submit {
+      font-size: 14px;
+    }
+  }
+  
 
 /**********************************************login***********************************************/
+/* Section Connexion */
 .connexion {
+    padding: 50px 20px;
     display: flex;
     justify-content: center;
-    background-color: #f5f5f5;
-    padding: 20px;
-    margin-top: 110px;
     align-items: center;
-}
-
-.logFormulaire {
+  }
+  
+  .logFormulaire {
     background: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     padding: 30px;
-    width: 100%;
-    height: 300px;
     max-width: 400px;
-    margin-top: 0px;
-}
-
-form a{
-    text-decoration: none;
-}
-
-.titre-logFormulaire {
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .titre-logFormulaire {
     font-size: 24px;
     font-weight: bold;
+    text-align: center;
+    color: #0A2558;
     margin-bottom: 20px;
-    color: #007bff;
-}
-
-.form-group {
-    margin-bottom: 15px;
-    text-align: left;
-}
-
-.form-group label {
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    font-size: 16px;
+    color: #0A2558;
     display: block;
-    font-size: 14.4px;
-    color: #333333;
     margin-bottom: 5px;
-}
-
-.form-group input {
+  }
+  
+  .form-group input {
     width: 100%;
     padding: 10px;
+    font-size: 16px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    font-size: 16px;
-    box-sizing: border-box;
-    transition: border-color 0.3s ease;
-}
-
-.form-group input:focus {
-    border-color: #007bff;
     outline: none;
-}
-
-.btn-submit {
-    display: block;
-    width: 100%;
-    padding: 12px;
-    font-size: 16px;
-    background-color: #007bff;
+    transition: border-color 0.3s;
+  }
+  
+  .form-group input:focus {
+    border-color: #f39c12;
+  }
+  
+  .btn-submit {
+    background-color: #0A2558;
     color: #ffffff;
+    padding: 12px 20px;
+    font-size: 16px;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.btn-submit:hover {
-    background-color: #0056b3;
-}
-
-.lien-nouveau {
-    margin-top: 15px;
-    font-size: 14.4px;
-    color: #555;
-}
-
-.lien-nouveau a {
-    color: #007bff;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .btn-submit:hover {
+    background-color: #072042;
+    transform: translateY(-3px);
+  }
+  
+  .lien-nouveau {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #0A2558;
+  }
+  
+  .lien-nouveau a {
+    color: #f39c12;
     text-decoration: none;
-}
-
-.lien-nouveau a:hover {
+    font-weight: bold;
+  }
+  
+  .lien-nouveau a:hover {
     text-decoration: underline;
-}
-
+  }
+  
+  /* Animation pour le formulaire */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .logFormulaire {
+      padding: 20px;
+    }
+  
+    .btn-submit {
+      font-size: 14px;
+    }
+  }
+  
 /*********************************************PROFIL**********************************************/
 .profil {
     max-width: 800px;
@@ -552,123 +585,99 @@ th {
 .delete-btn:hover {
     background-color: #c0392b;
 }
+i.bx.bx-chevrons-left {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 80px; /* Adjusts the size of the icon */
+    color: #0742b1; /* Sets the color of the icon */
+    transition: color 0.3s, transform 0.3s; /* Smooth transition for color and transformation */
+}
 
-
-  /********************************a propos de nous***************************************************/
-.pro {
-    max-width: 1900px;
-    margin: 50px auto;
-    background: #f7b6b6;
-    padding: 30px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+i.bx.bx-chevrons-left:hover {
+    color: #2980b9; /* Changes color on hover */
+    transform: translateX(-5px); /* Adds a slight movement when hovered */
 }
 
 
-.pro p {
-    line-height: 1.6;
-    font-size: 18px;
-    color: #555;
-    text-align: justify;
-}
 
-.pro p br {
-    margin-bottom: 10px;
-}
-/*******************************************footer******************************************/
-footer{
-    background: #bf65bc;
-    padding-top: 50px;
-    
-    }
-
-.footer-container{
-    width: 1160px;
-    margin: auto;
-    display: flex;
-    justify-content: left;
-    height: 144px;
-    
-    
-}
-.footer-container p{
-    width:200px;
-    margin: auto;
-    padding: 7px;
-    justify-content: left;
-    margin: 0;
-    font-size: 12px;
-    height: 55px;
-}
-.footer-section-info{
-    width: 11140px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    
-}
-.footer-bottom{
-    background: #f18930;
-    text-align: center;
-    line-height: 1.8;
-}
-
-.propos div {
-    width: 1000px;
+  /********************************a propos de nous************************************************/
+.propos {
+    background: linear-gradient(to bottom, #f7f9fc, #e4ecf5);
+    padding: 50px 20px;
+    color: #0A2558;
+  }
+  
+  .propos-container {
+    max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
-    background: #ffffff;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
-
-.propos p {
-    font-size: 16px;
-    margin: 10px 0;
-}
-
-.propos a{
-    text-decoration: none;
-    color:#b30909 ;
-}
-
-.propos a:hover{
-    color:#ff0000 ;
-    font-size: 16px;
-}
-
-.propos p:first-of-type {
-    font-size: 24px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .propos-title {
+    font-size: 36px;
     font-weight: bold;
-    color: #f39c12;
     margin-bottom: 20px;
-}
-
-.cantact .btn-cont {
-    display: block;
-    width: 100%;
-    max-width: 200px;
-    padding: 10px 15px;
-    margin: 20px auto 0;
+    color: #0A2558;
+  }
+  
+  .propos-title span {
+    color: #f39c12;
+  }
+  
+  .propos-intro, .propos-objective, .propos-message, .propos-mission, .propos-footer {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .propos-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .propos-list li {
+    background: #f39c12;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
     font-size: 16px;
+  }
+  
+  .propos-call-to-action {
+    font-size: 18px;
+    margin: 30px 0;
+  }
+  
+  .propos-link {
+    color: #f39c12;
     font-weight: bold;
-    color: #ffffff;
-    background-color: #f39c12;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-transform: uppercase;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.cantact .btn-cont:hover {
-    background-color: #d87e0a;
-}
-
+    text-decoration: none;
+  }
+  
+  .propos-link:hover {
+    text-decoration: underline;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
 /********************************************FOOTER*************************************************/
 .footer{
     height: 180px;
-    width: 100%;
     background-color: #860404;
     margin-top: 60px;
     color: #ecf0f1;
@@ -722,62 +731,85 @@ footer{
 }
 
 /*****************************************CONTACT***************************************************/
-.cantact {
-    margin-top: 100px;
-    background-color: #f9f9f9;
+/* Section Contact */
+.contact {
+    background: linear-gradient(to bottom, #f5f7fa, #e4ecf5);
     padding: 40px 20px;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.cantact fieldset {
-    width: 100%;
-    max-width: 500px;
-    border: 2px solid #f39c12;
+    text-align: center;
+  }
+  
+  .contact-fieldset {
+    border: 2px solid #0A2558;
     border-radius: 10px;
-    padding: 20px;
-    background-color: #ffffff;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.cantact legend {
-    font-size: 18px;
+    padding: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+  }
+  
+  .contact-legend {
+    font-size: 24px;
     font-weight: bold;
-    color: #f39c12;
+    color: #0A2558;
     padding: 0 10px;
-    text-transform: uppercase;
-}
-
-.cantact label {
+    background: #f39c12;
+    color: #ffffff;
+    border-radius: 5px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    font-size: 16px;
+    color: #0A2558;
     display: block;
-    font-size: 14px;
-    font-weight: bold;
-    color: #2c3e50;
-    margin-top: 10px;
-}
-
-.cantact input[type="text"],
-.cantact input[type="email"],
-.cantact textarea {
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
     width: 100%;
     padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
+    font-size: 16px;
+    border: 1px solid #ddd;
     border-radius: 5px;
-    font-size: 14px;
-    color: #2c3e50;
-    box-sizing: border-box;
-}
-
-.cantact input::placeholder,
-.cantact textarea::placeholder {
-    color: #999;
-}
-
-.cantact textarea {
-    resize: vertical;
-    min-height: 80px;
-}
-
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #f39c12;
+  }
+  
+  .btn-submit {
+    background-color: #0A2558;
+    color: #ffffff;
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .btn-submit:hover {
+    background-color: #072042;
+    transform: translateY(-3px);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-fieldset {
+      padding: 20px;
+    }
+  
+    .btn-submit {
+      width: 100%;
+    }
+  }
+  

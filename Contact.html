@@ -29,25 +29,45 @@
           <li><a href="inscrip.html" >
             <i class='bx bx-log-in-circle'></i>Inscription</a></li>
       </ul>
-
-        
-
     </nav>
 </header>
 
-<section class="cantact">
-  
-<fieldset>
-  <legend>contacter nous</legend>
-      <label for="nom">Votre nom:</label>
-        <input type="text"name="nom"id="nom"placeholder="votre nom"size="20"maxlength="10"/></p>
-        <label for="e-mail">Votre e-mail:</label>
-        <input type="email"name="e-mail"id="e-mail"placeholder="votre e-mail"size="20"maxlength="10"/></p>
-        <label for="message">écrire votre message ici:</label><br>
-        <textarea id="message" name="message" placeholder="votre message..."size="20"maxlength="10"rows="4" cols="50"></textarea><br><br>
-        <button type="submit" class="btn-cont">Envoyer</button>
-      </fieldset>
+<section class="contact">
+  <fieldset class="contact-fieldset">
+    <legend class="contact-legend">Nous Contacter</legend>
+    <div class="form-group">
+      <label for="nom">Votre nom :</label>
+      <input 
+        type="text" 
+        name="nom" 
+        id="nom" 
+        placeholder="Entrez votre nom" 
+        maxlength="50" 
+        required />
+    </div>
+    <div class="form-group">
+      <label for="email">Votre e-mail :</label>
+      <input 
+        type="email" 
+        name="email" 
+        id="email" 
+        placeholder="Entrez votre e-mail" 
+        maxlength="50" 
+        required />
+    </div>
+    <div class="form-group">
+      <label for="message">Votre message :</label>
+      <textarea 
+        id="message" 
+        name="message" 
+        placeholder="Rédigez votre message ici..." 
+        rows="4" 
+        required></textarea>
+    </div>
+    <button type="submit" class="btn-submit">Envoyer</button>
+  </fieldset>
 </section>
+
   
 
 
