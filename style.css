@@ -220,7 +220,6 @@ body {
 }
 /****************************************INSCRIPTION**********************************************/
 .inscription {
-    background: linear-gradient(to bottom, #f7f9fc, #e4ecf5);
     padding: 50px 20px;
     display: flex;
     justify-content: center;
@@ -596,7 +595,6 @@ i.bx.bx-chevrons-left:hover {
 
   /********************************a propos de nous************************************************/
 .propos {
-    background: linear-gradient(to bottom, #f7f9fc, #e4ecf5);
     padding: 50px 20px;
     color: #0A2558;
   }
@@ -726,7 +724,6 @@ i.bx.bx-chevrons-left:hover {
 
 /*****************************************CONTACT***************************************************/
 .contact {
-    background: linear-gradient(to bottom, #f5f7fa, #e4ecf5);
     padding: 40px 20px;
     text-align: center;
   }
