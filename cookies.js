@@ -8,6 +8,7 @@ function acceptCookies() {
 }
 
 // Vérifier si l'utilisateur a déjà accepté les cookies
+
 document.addEventListener("DOMContentLoaded", () => {
     const cookiesAccepted = localStorage.getItem("cookiesAccepted");
     if (cookiesAccepted === "true") {
