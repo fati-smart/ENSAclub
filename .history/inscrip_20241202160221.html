@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <title>inscription</title>
+</head>
+
+
+<body>
+    
+    <header class="header">
+        <div><img src="logo.png" alt="logo"></div>
+        <div class="titre"><a href="index.html"><p>ENSA CLUB</p></a></div>
+        <nav>
+
+          <ul>
+            <li><a href="index.html">
+              <i class='bx bx-home'></i></i>Accueil</a></li>
+              <li><a href="club.html">
+                <i class='bx bx-credit-card-front'></i>clubs</a></li>
+              <li><a href="evenement.html">
+                <i class='bx bx-calendar-event' ></i>Evènements</a></li>
+              <li><a href="propos.html">
+                <i class='bx bxs-contact'></i>À propos de nous</a></li>
+              <li><a href="Contact.html">
+                <i class='bx bx-envelope'></i>Contacter nous</a></li>
+              <li><a href="inscrip.html" class="active">
+                <i class='bx bx-log-in-circle'></i>Inscription</a></li>
+          </ul>
+
+        </nav>
+    </header>
+
+
+    <section class="inscription">
+      <div class="formulaire">
+        <h1 class="titre-formulaire">Inscription à ENSA Club</h1>
+        <form action="profil.html">
+          <div class="form-group">
+            <label for="nom">Votre nom :</label>
+            <input type="text" name="nom" id="nom" placeholder="Entrez votre nom" required />
+          </div>
+          <div class="form-group">
+            <label for="prenom">Votre prénom :</label>
+            <input type="text" name="prenom" id="prenom" placeholder="Entrez votre prénom" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Votre e-mail :</label>
+            <input type="email" name="email" id="email" placeholder="Entrez votre e-mail" required />
+          </div>
+          <div class="form-group">
+            <label for="password">Mot de passe :</label>
+            <input type="password" name="password" id="password" placeholder="Créez un mot de passe" required />
+          </div>
+          <div class="form-group">
+            <label for="password-confirm">Confirmez le mot de passe :</label>
+            <input type="password" name="password-confirm" id="password-confirm" placeholder="Confirmez votre mot de passe" required />
+          </div>
+          <button type="submit" class="btn-submit">S'inscrire</button>
+        </form>
+        <p class="lien-membre">
+          Vous êtes déjà membre ? <a href="login.html">Connectez-vous ici</a>
+        </p>
+      </div>
+    </section>
+    
+    
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+              <ul>
+                <h3>CONTACT</h3><br />
+                <p>École Nationale des Sciences Appliquées<br /> Agadir – Maroc<br />
+                Tél : +212 0981256<br />
+                Email : contact_clubsA@gmail.com<br />
+              </p>
+              </ul>
+            </div>
+            <div class="footer-section-info">
+              <ul>
+                <h3>EnsaClub</h3>
+              <p> le plus grand rassemblement de clubs d'ENSA agdir </p>
+              </ul>
+            </div>
+            <div class="footer-content">
+                <h3>Liens utiles</h3>
+                 <ul class="list">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="propos.html">À propos de nous</a></li>
+                    <li><a href="club.html">clubs</a></li>
+                    <li><a href="Contact.html">Contacter nous</a></li>
+                 </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2024 EnsaClub - By fatima-azzahrae et souad</p>
+        </div>
+    </footer>
+
+    <script src="InscriptJS.js"></script>
+
+</body>
+
+</html>

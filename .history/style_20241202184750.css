@@ -1,0 +1,803 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: cursive;
+  background-color: #f5f6fa;
+  overflow-x: hidden;
+  background: linear-gradient(to bottom, #f7f9fc, #e4ecf5);
+}
+
+/*******************************************HEADER************************************************/
+.header {
+  background-color: #0A2558;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header img {
+  margin-left: 20px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.header .titre a {
+  text-decoration: none;
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.3s ease-in-out;
+}
+.header .titre p{
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff; 
+  margin: 0;   
+}
+
+nav ul li a:hover {
+  color: #9eb8ef;
+}
+
+nav ul li a.active {
+  border-bottom: 2px solid #9eb8ef;
+  padding-bottom: 3px;
+  color: #9eb8ef;
+  transform: scale(1.1); 
+
+}
+/*************************************section CLUB***********************************************/
+.club{
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  flex-wrap: wrap;
+}
+
+.club .carteClub{
+  width: 350px;
+  height: 420px;
+  background-color: #e9ebed;
+  border-radius: 12px;
+  margin-left: 30px;
+  margin-right: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  position: relative;
+}
+
+.club .carteClub .imageClub {
+  width: 100%;
+  height: 45%;
+  margin-left: 15px;
+  margin-right: 15px;
+  align-items: center;
+}
+
+.club .carteClub .imageClub img{
+  width: 90%;
+  height: 90%;
+  margin-top: 10px;
+  border-radius: 12px;
+}
+
+.club .carteClub .text{
+  width: 90%;
+  height: 90%;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.club .carteClub .text p{
+  text-align: left;
+}
+
+.club .carteClub .text strong{
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #0A2558;
+}
+
+.club .carteClub .text .jointure{
+  color: #143c85d7;
+}
+
+.carteClub button {
+  position: absolute; 
+  bottom: 10px; 
+  right: 15px; 
+  padding: 10px 20px; 
+  background-color: #ff1100; 
+  color: #fff; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  width: 90px;
+}
+
+.carteClub button:hover {
+  background-color: #d91103e0; 
+  transform: scale(1.1); 
+  
+}
+
+/****************************************section EVENMENT****************************************/
+.event {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 30px;
+  align-items: center; 
+  border-radius: 12px;    
+  gap:  40px 15px; 
+  max-width: 1400px;
+  
+}
+
+.carteEvent {
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: height 0.3s ease, box-shadow 0.3s ease;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+.carteEvent:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.carteEvent .titreC {
+  margin-bottom: 7px;
+  margin-top: 7px;
+}
+
+.carteEvent .titreC strong{
+  font-size: 19.2px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.carteEvent .titre {
+  margin-bottom: 7px;
+}
+
+.carteEvent strong{
+  color: #ff1100;
+}
+
+.carteEvent .dets {
+  text-align: left;
+}
+
+.carteEvent .dets strong{
+  color: #000000;
+}
+
+.carteEvent .dets a{
+  text-decoration: none;
+  color:#09b32d ;
+}
+
+.carteEvent .dets a:hover{
+  color:#00ff37 ;
+  font-size: 16px;
+}
+/****************************************INSCRIPTION**********************************************/
+.inscription {
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulaire {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 500px;
+  width: 100%;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.titre-formulaire {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #0A2558;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 16px;
+  color: #0A2558;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+  border-color: #f39c12;
+}
+
+.btn-submit {
+  background-color: #0A2558;
+  color: #ffffff;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-submit:hover {
+  background-color: #072042;
+  transform: translateY(-3px);
+}
+
+.lien-membre {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #0A2558;
+}
+
+.lien-membre a {
+  color: #f39c12;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.lien-membre a:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .formulaire {
+    padding: 20px;
+  }
+
+  .btn-submit {
+    font-size: 14px;
+  }
+}
+
+
+/**********************************************login***********************************************/
+.connexion {
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logFormulaire {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 400px;
+  width: 100%;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.titre-logFormulaire {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #0A2558;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 16px;
+  color: #0A2558;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+  border-color: #f39c12;
+}
+
+.btn-submit {
+  background-color: #0A2558;
+  color: #ffffff;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-submit:hover {
+  background-color: #072042;
+  transform: translateY(-3px);
+}
+
+.lien-nouveau {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #0A2558;
+}
+
+.lien-nouveau a {
+  color: #f39c12;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.lien-nouveau a:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .logFormulaire {
+    padding: 20px;
+  }
+
+  .btn-submit {
+    font-size: 14px;
+  }
+}
+
+/*********************************************PROFIL**********************************************/
+.profil {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.276);
+  border-radius: 10px;
+}
+
+.section-title {
+  font-size: 28px;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-title {
+  font-size: 20px;
+  color: #34495e;
+  margin-bottom: 15px;
+}
+
+.form-subtitle {
+  font-size: 18px;
+  color: #7f8c8d;
+  margin-bottom: 10px;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+}
+
+.profile-picture img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #db343442;
+}
+
+.profile-info .profile-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #34495e;
+}
+
+.profile-info .profile-email {
+  font-size: 14px;
+  color: #555;
+}
+
+.forms-profil {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.account-info,
+.security-settings {
+  flex: 1;
+  min-width: 300px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+.save-button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.save-button:hover {
+  background-color: #2980b9;
+}
+
+.clubs-section .club-name {
+  font-size: 16px;
+  color: #2c3e50;
+  margin-left: 10px;
+}
+
+.clubs-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+i.bx.bx-chevrons-left {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 80px; 
+  color: #0742b1; 
+  transition: color 0.3s, transform 0.3s; 
+}
+
+i.bx.bx-chevrons-left:hover {
+  color: #2980b9; 
+  transform: translateX(-5px); 
+}
+
+
+
+/********************************a propos de nous************************************************/
+.propos {
+  padding: 50px 20px;
+  color: #0A2558;
+}
+
+.propos-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.propos-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #0A2558;
+}
+
+.propos-title span {
+  color: #f39c12;
+}
+
+.propos-intro, .propos-objective, .propos-message, .propos-mission, .propos-footer {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.propos-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.propos-list li {
+  background: #f39c12;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.propos-call-to-action {
+  font-size: 18px;
+  margin: 30px 0;
+}
+
+.propos-link {
+  color: #f39c12;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.propos-link:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/********************************************FOOTER*************************************************/
+.footer{
+  height: 180px;
+  background-color: #860404;
+  margin-top: 60px;
+  color: #ecf0f1;
+  padding: 10px 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.footer-content, .footer-section-info {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+}
+
+.footer h3 {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+  color: #f39c12;
+}
+
+.footer p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 2px 0;
+}
+
+.footer a {
+  color: #f39c12;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  background-color: #34495e;
+  color: #bdc3c7;
+  padding: 10px;
+  font-size: 12px;
+}
+
+/*****************************************CONTACT***************************************************/
+.contact {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact-fieldset {
+  border: 2px solid #0A2558;
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+}
+
+.contact-legend {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0A2558;
+  padding: 0 10px;
+  background: #f39c12;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 16px;
+  color: #0A2558;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #f39c12;
+}
+
+.btn-submit {
+  background-color: #0A2558;
+  color: #ffffff;
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-submit:hover {
+  background-color: #072042;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+  .contact-fieldset {
+    padding: 20px;
+  }
+
+  .btn-submit {
+    width: 100%;
+  }
+}
