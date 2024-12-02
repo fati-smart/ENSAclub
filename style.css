@@ -148,19 +148,29 @@ body {
 
 /****************************************section EVENMENT****************************************/
 .event {
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
     background-color: #f5f5f5;
     margin-top: 110px;
-    align-items: center; 
-    border-radius: 12px;     
+    /*align-items: center; */
+    border-radius: 12px;    
+    gap:  40px 15px; 
+    max-width: 1400px;
+    width: 100%;
+    
+    
 }
 
 .carteEvent {
     width: 300px;
-    height: 160px;
+    display: flex;
+    flex-direction: column;
+
+   /* height: 160px;*/
+   
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -169,10 +179,10 @@ body {
     padding: 10px;
     position: relative;
     text-align: center;
-    margin-left: 40px;
+  /* margin-left: 40px;
     margin-right: 40px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 20px;*/
 
 }
 
@@ -543,13 +553,62 @@ th {
     background-color: #c0392b;
 }
 
-  /************************************a propos de nous********************************************/
-.propos {
-    margin-top: 100px;
-    background-color: #f9f9f9;
-    color: #2c3e50;
-    padding: 40px 20px;
-    font-family: Arial, sans-serif;
+
+  /********************************a propos de nous***************************************************/
+.pro {
+    max-width: 1900px;
+    margin: 50px auto;
+    background: #f7b6b6;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+
+.pro p {
+    line-height: 1.6;
+    font-size: 18px;
+    color: #555;
+    text-align: justify;
+}
+
+.pro p br {
+    margin-bottom: 10px;
+}
+/*******************************************footer******************************************/
+footer{
+    background: #bf65bc;
+    padding-top: 50px;
+    
+    }
+
+.footer-container{
+    width: 1160px;
+    margin: auto;
+    display: flex;
+    justify-content: left;
+    height: 144px;
+    
+    
+}
+.footer-container p{
+    width:200px;
+    margin: auto;
+    padding: 7px;
+    justify-content: left;
+    margin: 0;
+    font-size: 12px;
+    height: 55px;
+}
+.footer-section-info{
+    width: 11140px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    
+}
+.footer-bottom{
+    background: #f18930;
     text-align: center;
     line-height: 1.8;
 }
